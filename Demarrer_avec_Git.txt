@@ -39,11 +39,37 @@ copier l'adresse ssh du repository
 configurer l'adresse du repository avec le nom origin
 git remote add origin <coller l'adresse du repository>
 
-configurer le nom de la branche principale
+renommer la branche principale
 git branch -M main
 
 push vers github :
 git push -u origin main
 
 ET Voila!!
+
+
+supprimer une branch
+git branch -d NomDeLaBranche
+
+réaliser une remise (mettre les fichier non commit de coté pour le transferer sur une autre branche)
+git stash 
+git branch branch1
+git checkout branch1
+git stash list (visualiser les fichiers en attente)
+git stash apply   (applique la remise)
+
+modifier une branche déja commit
+il faut analyser les dernier commit avec 
+git log
+git reset --hard HEAD^ (supprime le dernier commit)
+creer ensuite une nouvelle branche
+
+modifier le message du dernier commit
+git commit --amend -m "nouveau message"
+
+rajouter un fichier apres un commit
+git add fichier_A_ajouter
+git commit --amend --no-edit
+
+
 
