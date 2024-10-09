@@ -123,4 +123,6 @@ l'option -d affiche uniquement les répertoire
 
 l'option -f affiche uniquement les fichiers ordinaire
 
+Commande fdisk -l
+affiche les nom des volumes de stockage
 
