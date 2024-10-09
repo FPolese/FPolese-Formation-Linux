@@ -1,0 +1,26 @@
+une commande est composé de 3 canaux
+le canal d'entrée
+l'endroit ou l'on souhaite que cette commande se lance
+exemple : cat /etc/os-relase
+
+le canal de sortie
+l'endroit ou l'on veut que la commande affiche son résultat (par défaut, dans le terminal, 
+mais on peut tres bien afficher le résultat dans un fichier
+exemple
+cat /etc/os-release > /home/oxyacantha/os-release
+
+si on redirige 2 commandes vers la meme sortie standard, la derniere écrase la premiere 
+on peut cumuler les sortie standard dans le meme fichier en utilisans >>
+exemple
+
+(commande 1 vers fichier os-release)   cat /etc/os-release > /home/oxyacantha/os-release
+(commande 2 vers fichier ox-release)   cat /etc/passwd > /home/oxyacantha/os-release
+dans ce cas, seul la deuxieme commande retournera un résultat
+
+si 
+(commande 1 vers fichier os-release)   cat /etc/os-release > /home/oxyacantha/os-release
+(commande 2 vers fichier ox-release)   cat /etc/passwd >> /home/oxyacantha/os-release
+dans ce cas, le résultat de la deuxième commande sera copié après le résultat de la première commande
+
+
+

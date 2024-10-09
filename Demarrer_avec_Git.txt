@@ -1,0 +1,49 @@
+intialisation de git
+
+--global -> effectif pour tous les projets git
+
+configurer user
+git config --global user.name Fabien POLESE
+
+configurer l email utilisateur
+git config --global user.email fabien.polese@inrae.fr
+
+configurer l environnement 
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+
+configurer les éditeur
+git config --global core.editor vim
+git config --global merge.tool vimdiff
+
+initialisation du projet
+git init
+crée un dossier caché .git contient la config du projet, objets et pointeur
+
+indexer les fichiers de dépot 
+git add fichier
+
+creer une version 
+git commit -m "commentaire sur la version"
+
+création des clé ssh
+ssh-keygen -t ed25519 -C fabien.polese@inrae.fr
+la clé se trouve /home/oxyacantha/.ssh/id_ed25519.pub
+
+copier/coller la clé dans github / setting / ssh and GPG keys
+
+creer un repository dans Github
+copier l'adresse ssh du repository
+
+configurer l'adresse du repository avec le nom origin
+git remote add origin <coller l'adresse du repository>
+
+configurer le nom de la branche principale
+git branch -M main
+
+push vers github :
+git push -u origin main
+
+ET Voila!!
+

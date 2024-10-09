@@ -1,0 +1,126 @@
+Désactiver interface graphique par défaut au démarrage
+sudo -i
+systemctl set-default multi-user
+
+Activer interface graphique par défaut au démarrage
+sudo -i
+systemctl set-default graphical
+
+
+désactiver interface graphique temporairement
+systemctl stop lightdm
+
+activer interface graphique
+systemctl start lightdm
+
+Basculer sur console 1 à 6
+
+Ctrl + Alt + F1 à F6
+
+revenir a l'interface graphique
+
+Ctrl + Alt F7
+
+commande grep
+la commande grep permet de filter par mot clé le contenu d'un fichier
+il n'affiche que les lignes contenant le mot clé
+exemple grep mint /etc/os-release
+l'option -n permet d'afficher le numéro de ligne du mot clé recherché
+
+
+Commande ls :
+liste les dossiers et fichier d'un répertoire
+
+option de la commande ls
+ls -l affiche les information longue du répertoire (avec les droit utilisateurs)
+
+ls -l -t -r trie en fonction de la date dans l'ordre croissant
+ls -l -t trie en fonction de la date dans l ordre décroissant
+
+
+on peut cumuler toutes les options :
+ls -latr
+
+
+ls -l -t trie en fonction de la date dans l ordre croissant
+
+commande Type
+la commande type indique si une autre commande fait partie du Shell ou si c est une commande externe
+
+commande file
+la commande file donne des informations concernant un dossier ou un fichier mi en argument
+
+
+afficher le manuel d'une commande (exemple echo)
+man echo
+
+afficher l'aide d'une commande (exemple echo)
+help echo | more  (| more pour afficher par page)
+
+commande history
+affiche l'historique numéroté des commandes passées dans le terminal
+on peut appeler une commande déja passée par son numéro précédé d'un !
+exemple
+!454
+
+on peu effectuer une recherche des commandes déja effectuées par 
+ctrl+R 
+on entre les premieres lettres d'un mot clé de la commande recherchée
+on peut rappeler la commande recherché par la touche TAB
+
+si il y a plusieurs commande ayant le meme mot clé, ctrl + R a nouveau pour remonter jusqu'a la commande voulue
+
+realiser une macro pour une commande :
+éditer le fichier
+
+commande cat
+affiche le contenu d'un fichier
+on peut numéroter les lignes affiché par cat avec l'option -n
+
+
+commande less
+permet de visualiser le contenu d'un fichier par page
+on peu remonter avec la touche b
+meme raccourcis que vim
+
+commande more 
+meme utilité que less mais avec des fonctionnalité en moins
+préférer utiliser less plutot que more
+
+commande sed
+permet d'afficher le remplacement  des caractere par d'autre à la volée sans modifier le fichier
+exemple 
+sed 's/Debian/ubuntu' /etc/os-release
+affiche le remplacement de  Debian par ubuntu du fichier /etc/os-release sans modifier le fichier
+
+l'otion -i permet la modification du fichier (attention aux fichiers originaux !!!)
+
+la commande sort 
+permet de classer par ordre alphabetique croissant
+
+la commande cut 
+...a détailler...
+
+commande df
+permet de connaitre l'espace disque
+l'option -h redimentionne les taille (en octets) pour qu'elles soit mieux lisible
+
+la commande du
+permet de voir la taille de chaque sous dossier de l'emplacement actuel
+
+commande whereis
+permet d'afficher le chemin d'acces d'une commande
+
+commande find
+find Documents
+affiche l'arborescence et le contenu de /Documents/
+
+option -name affiche les fichier selon le nom spécifié
+exple : find /Documents -name '*.txt'
+affiche tous les txt dans le dossier Documents et tous ses sous dossiers
+
+l'option -d affiche uniquement les répertoire
+
+l'option -f affiche uniquement les fichiers ordinaire
+
+
