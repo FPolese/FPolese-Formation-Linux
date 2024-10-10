@@ -34,9 +34,14 @@ liste les dossiers et fichier d'un répertoire
 option de la commande ls
 ls -l affiche les information longue du répertoire (avec les droit utilisateurs)
 
+certains éléments peuvent etre suivi de / ou * ou @ ou rien
+si truc/  c est un dossier
+si truc   (suivi de rien) c est un fichier régulier non executable
+si truc* c est un fichier executable
+si truc@ c est un raccourcis
+
 ls -l -t -r trie en fonction de la date dans l'ordre croissant
 ls -l -t trie en fonction de la date dans l ordre décroissant
-
 
 on peut cumuler toutes les options :
 ls -latr
@@ -125,4 +130,10 @@ l'option -f affiche uniquement les fichiers ordinaire
 
 Commande fdisk -l
 affiche les nom des volumes de stockage
+
+commande ip addr
+affiche la configuration des interfaces réseaux, dont l'adresse ip
+
+ifconfig
+liste les interfaces réseaux et leur adresse ip
 
