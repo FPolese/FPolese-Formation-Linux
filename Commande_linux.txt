@@ -81,7 +81,8 @@ realiser une macro pour une commande :
 commande cat
 affiche le contenu d'un fichier
 on peut numéroter les lignes affiché par cat avec l'option -n
-on peut utiliser cat pour creer et remplir un fichier en une seule commande
+
+on peut utiliser cat pour creer et remplir un fichier de plusieurs lignes en une seule commande
 cat > fichier.txt << EOF     ce qui donne
 $cat > fichier.txt << EOF    (on lance la commande)
 > ligne 1                    (on écrit les lignes désirées)
@@ -90,7 +91,21 @@ $cat > fichier.txt << EOF    (on lance la commande)
 > EOF                        (on termine la commande)
 
 
+commande echo
+affiche des caractere a l'écran
+$echo test
+test
+$
 
+on peut uliser echo pour creer un fichier et y ecrire un text
+$echo ligne1 > text.txt
+$cat text.txt
+ligne1
+
+on peut ajouter du texte apres la ligne1
+echo ligne2 >> text.txt
+et ainsi de suite
+echo ligne3 >> text.txt ...
 
 
 commande less
@@ -151,4 +166,53 @@ commande chmod
 chmod modifie le comportement des fichiers
 la combinaison de lettre u(user) g(groupe) o(other group) a(all)   (ugoa) controle la categorie d'acces
 les lettres rwxXst modifie le comportement du fichier r(read) w(write) x(executable) X et s seront a dévelloper plus tard
+
+commande mkdir
+creer des dossiers
+on peut crééer plusieurs dossier en meme temps
+$ mkdir dossier1 dossier2 dossier3
+$ ls
+dossier1 dossier2 dossier3
+$ 
+
+si on veut un dossier avec le nom comprenant un espace il faut entrer
+$mkdir "nom du dossier"
+
+creer une succession de dossier avec l option -p (parent)
+mkdir -p /branche1/branche2/branche3/branche4
+
+l'option -v permet d'afficher l'ensemble des commande successive (v pour verbose / bavard)
+
+commande cp
+pour copier des fichers 
+cp fichier1.txt copieFichier1.txt
+
+pour copier l'intégralité d'un répertoire
+cp -R repertoire1 CopieRepertoir1
+
+Commande mv
+déplacer des fichier
+mv fichier.txt /tmp
+
+déplacer un répertoire
+mv -R Dossier1/ /temp/
+
+ou alors
+mv /tmp/fichier.txt ./
+(ce qui se traduit par : déplacer fichier.txt qui se trouve dans /tmp ver le dossier ou je me trouve)
+
+RAPPEL !!!
+./ veut dire le dossier ou je me trouve (ici)
+
+
+on peut aussi se servir de mv pour renomer un fichier
+mv fichier1.txt fichier2.txt
+
+ou meme renomer en déplacant
+mv fichier1.txt /tmp/fichier2.txt
+
+effacer un dossier non vide sans avertissement
+rm -rf
+
+
 
