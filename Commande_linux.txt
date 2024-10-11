@@ -214,5 +214,15 @@ mv fichier1.txt /tmp/fichier2.txt
 effacer un dossier non vide sans avertissement
 rm -rf
 
+utilisation de l'historique
+commande history
+affiche toutes les commandes saisies en les numérotant
+
+on peut ainsi rappeler la commande 858 comme cela
+!858
+
+utilisation de (reverse-i-search)
+apuuit ctrl+r ouvre l'outils de recherche dans l'historique
+il ne reste plus qu'a saisir le début d'une commande déja utiliser pour la retrouver
 
 
