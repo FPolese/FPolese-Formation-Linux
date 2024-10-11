@@ -1,0 +1,15 @@
+pour éviter les problèmes d'interprétation entre les différents shell il faut commencer son script par la ligne SheBang (HashBang) #!/bin/bash
+l'interpreteur comprendra qu'il doit utilier le shel bash pour interpreter la suite du script
+
+# début du script
+#!/bin/bash
+
+
+
+une fois que le script est écrit il faut le rendre executable
+oxyacantha@fedora:~$ chmod u+x fichier.sh
+
+rappel chmod modifie les attributs du fichier
+chmod u+x => rend e(x)ecutable pour (u)tilisateur
+
+

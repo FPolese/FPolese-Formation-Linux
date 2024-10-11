@@ -81,6 +81,16 @@ realiser une macro pour une commande :
 commande cat
 affiche le contenu d'un fichier
 on peut numéroter les lignes affiché par cat avec l'option -n
+on peut utiliser cat pour creer et remplir un fichier en une seule commande
+cat > fichier.txt << EOF     ce qui donne
+$cat > fichier.txt << EOF    (on lance la commande)
+> ligne 1                    (on écrit les lignes désirées)
+> ligne 2
+> ligne 3
+> EOF                        (on termine la commande)
+
+
+
 
 
 commande less
@@ -136,4 +146,9 @@ affiche la configuration des interfaces réseaux, dont l'adresse ip
 
 ifconfig
 liste les interfaces réseaux et leur adresse ip
+
+commande chmod
+chmod modifie le comportement des fichiers
+la combinaison de lettre u(user) g(groupe) o(other group) a(all)   (ugoa) controle la categorie d'acces
+les lettres rwxXst modifie le comportement du fichier r(read) w(write) x(executable) X et s seront a dévelloper plus tard
 
