@@ -1,0 +1,91 @@
+pour pouvoir gere les utilisateur il faut etre connecté en root
+
+création d'un user
+useraad -c "Fabien Polese" fpolese
+passwd fpolese   (changement du mot de passe pour fpolese)
+
+l'option -c (ou --comment) : déscription courte du compte (ici nom complet du user)
+
+la création d'un utilisateur crée également sont espace perso /home/user
+
+la commande id 
+affiche l'appartenance d'un utilisateur a un groupe
+l'utilisateur est identifié par le système par un chiffre >= 1000, sauf pour root dont l id est 0
+
+uid (user id) 
+gid (user's group id)
+groupes
+
+il y a 2 groupes important root et wheel
+le groupe wheel a le droit a la commande sudo et est par défaut le groupe d'appartenance du user qui install le système
+
+
+
+pour des raisons de sécurité, tous processus en cours est concidéré comme un utilisateur 
+(mais un utilisateur système) avec des autorisations et des réstrictions propre.
+si un hacker pirate la machine via une faille sur un processus, il aura des action limité par les autorisation du procéssus en question
+
+
+les utilisateur réels ont pour particularité d'etre les seul a ouvrir une session /bin/bash
+
+la fonction sudo /etc/shadow affiche l'intégralité des utilisateur (système et réel(ou physiques) que j'appelerais users))
+
+on peut afficher les utilisateur physique et systèmes en éditant le fichier /etc/passwd
+
+cat /etc/passwd
+
+pour n'afficher que les users on peut par exemple les filtrer par /bin/bash , ou meme seulement /bash
+sudo grep bash /etc/passwd
+
+autre exemple de filtrage avec la commande awk
+
+$ awk -F: '{print $1}' /etc/passwd
+root
+bin
+deamon
+...
+oxyacantha
+fpolese
+...
+
+
+l'option -F inque a awk que le fichier /etc/passwd utilise les deux-points comme séparateur et '{print $1}' signifie "affiche la premiere colone
+
+les UID des users figure colone 3 donc on peut les extraire comme ca
+
+$ awk -F: '{print $3]' /etc/passwd
+0
+1
+2
+...
+1000
+1001
+1002
+...
+
+donc pour n'afficher que les users on peut filtrer la 3eme colone pour strictement superieur a 999 =>
+$awk -F: '$3 > 999 {print $1}' /etc/passwd
+
+modifier les informations d'un user (ajouter adresse tél etc...)
+en root
+finger <nom du user>
+
+élever un user au rang de wheel
+utiliser la commande usermod en root ou sudo
+usermod -a -G wheel fpolese
+
+supprimer un utilisateur du groupe wheel (ou d'un groupe en général) (en root ou sudo)
+sudo gpasswd -d fpolese wheel
+
+creer et supprimer des groupes
+groupadd <nom du groupe>
+
+supprimer un user en root ou sudo
+userdel fantasio
+
+la commande userdel ne supprime pas le dossier personnel /home/user
+
+
+
+ 
+
