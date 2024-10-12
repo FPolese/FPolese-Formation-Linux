@@ -226,3 +226,11 @@ apuuit ctrl+r ouvre l'outils de recherche dans l'historique
 il ne reste plus qu'a saisir le début d'une commande déja utiliser pour la retrouver
 
 
+commande info
+consulter le manuel en ligne
+fonctionne comme man
+exemple : $ info bash
+
+
+
+
