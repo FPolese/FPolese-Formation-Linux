@@ -8,6 +8,10 @@ l'option -c (ou --comment) : déscription courte du compte (ici nom complet du u
 
 la création d'un utilisateur crée également sont espace perso /home/user
 
+création du mot de pass user
+~# passwd <user>
+
+
 la commande id 
 affiche l'appartenance d'un utilisateur a un groupe
 l'utilisateur est identifié par le système par un chiffre >= 1000, sauf pour root dont l id est 0
@@ -86,6 +90,17 @@ userdel fantasio
 la commande userdel ne supprime pas le dossier personnel /home/user
 
 
+Gestions des droit utiisateurs
+gestion des droits d'acces (fichiers ou dossiers) se fait avec la commande chmod
+rendre un fichier/dossier rw que pour l'utilisateur 
+
+chmod go-rw nom_du_fichier (g = pour le groupe, o pour les autres, -r retirer le droit de read, -w retire le droit de write)
+
+retirer la lecture seulement :
+
+chmod go-r <fichier>
+
+
 
  
-
+'
