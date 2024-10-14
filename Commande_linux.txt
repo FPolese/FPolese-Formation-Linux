@@ -250,5 +250,30 @@ affiche des informations sur le matériel de la machine
 on peut trier par exemple avec grep
 lspci | grep -i vga pour n'afficher que la carte vidéo
 
+commande ln
+la commande ln crée des lien symbolique entre les fichier ou les répertoire
+
+exemple lien de fichier
+ln -s fichier.txt lien.txt
+le fichier lien.txt pointe vers fichier.txt
+en remplissant lien.txt avec echo "blablabla" > lien.txt on rempli en fait fichier.txt
+ 
+exemple lien de répertoir
+ln -s /tmp/ depot
+en faisant ls depot/ on visualise en fait le contenu de /tmp/
+
+commande ps (processus)
+$ps
+affiche l'état des processus en cours
+
+ps x 
+affiche l'ensemble de mes processus en cours
+
+ps a ajoute les processus de tout les autres utilisateurs (utilisateur system ou users)
+
+ps u fournis des renseignements supplémetnaires comme le propriétaire du prcessus, l'utilisation du processeur, ou lde la memoire
+
+la commande top affiche l'état des procéssus en temps réel
+$ top
 
 
