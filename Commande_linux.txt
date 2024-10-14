@@ -276,4 +276,15 @@ ps u fournis des renseignements supplémetnaires comme le propriétaire du prces
 la commande top affiche l'état des procéssus en temps réel
 $ top
 
+commande kill
+pour utiliser la commande kill il est nécessaire de connaitre le numéro de procéssus avec la commande ps x
+kill -KILL <nmr de processus>
+
+commande killall
+killall est utilisé avec le nom du processus
+killall -KILL <nom du processus>
+
+killall tue tout les processus qui porte le meme nom
+kill tue un processus spécifique 
+
 
