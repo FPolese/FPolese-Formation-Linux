@@ -244,6 +244,11 @@ consulter le manuel en ligne
 fonctionne comme man
 exemple : $ info bash
 
+commande lspci
+affiche des informations sur le matériel de la machine
+
+on peut trier par exemple avec grep
+lspci | grep -i vga pour n'afficher que la carte vidéo
 
 
 
