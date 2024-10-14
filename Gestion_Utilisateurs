@@ -41,6 +41,11 @@ cat /etc/passwd
 pour n'afficher que les users on peut par exemple les filtrer par /bin/bash , ou meme seulement /bash
 sudo grep bash /etc/passwd
 
+sudo grep -c bash /etc/passwd
+l'option -c indique le nombre de ligne concerné par la recherche. ici le nombre d'utilisateur donc
+
+
+
 autre exemple de filtrage avec la commande awk
 
 $ awk -F: '{print $1}' /etc/passwd
