@@ -89,6 +89,9 @@ userdel fantasio
 
 la commande userdel ne supprime pas le dossier personnel /home/user
 
+pour supprimer le dossier personnel en meme temps que le use il faut faire
+# userdel -r <user>
+
 
 Gestions des droit utiisateurs
 gestion des droits d'acces (fichiers ou dossiers) se fait avec la commande chmod
@@ -100,7 +103,19 @@ retirer la lecture seulement :
 
 chmod go-r <fichier>
 
+on peut personnaliser le profil utilisateur dans le répertoir /etc/skel
+pour rappel les fichier de configuration se trouve tous dans /etc
 
 
- 
-'
+pour restreindre l'acces a un dossier on utilise aussi la commande chmod
+mais contrairement au fichier, le x de executable n ayant pas de sens pour un dossier, il est utiliser pour autoriser ou interdir l acces au dossier
++x on autorise
+-x on interdit
+
+changer le propriétaire et le groupe d'appartenance d'un fichier (uniquement en root)
+commande chown (change owner)
+chown proprietaire:groupe fichier
+exemple
+chown oxyacantha:wheel test.txt
+
+

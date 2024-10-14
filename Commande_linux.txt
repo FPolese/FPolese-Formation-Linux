@@ -49,7 +49,7 @@ ls -latr
 
 ls -l -t trie en fonction de la date dans l ordre croissant
 
-commande Type
+commande type
 la commande type indique si une autre commande fait partie du Shell ou si c est une commande externe
 
 commande file
@@ -141,13 +141,26 @@ permet de voir la taille de chaque sous dossier de l'emplacement actuel
 commande whereis
 permet d'afficher le chemin d'acces d'une commande
 
+
 commande find
 find Documents
 affiche l'arborescence et le contenu de /Documents/
 
+la commande find permet aussi de retrouver l'emplacement d'un fichier dont on ignore l'emplacement
+exemple
+find /dossierDeRecherche -name 'test.txt'
+dossier de recherche peut etre juste / (pour dire que c est depuis la racine système)
+
 option -name affiche les fichier selon le nom spécifié
 exple : find /Documents -name '*.txt'
 affiche tous les txt dans le dossier Documents et tous ses sous dossiers
+
+option -iname rend la recherche insensible a la casse (ignore l utilisation des majuscule et minuscule)
+
+option -size permet de chercher en fonction de la taille du fichier
+exemple
+find /user/bin -size +500K | sort
+
 
 l'option -d affiche uniquement les répertoire
 
