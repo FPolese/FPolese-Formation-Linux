@@ -247,8 +247,10 @@ exemple : $ info bash
 commande lspci
 affiche des informations sur le matériel de la machine
 
+commande grep
 on peut trier par exemple avec grep
 lspci | grep -i vga pour n'afficher que la carte vidéo
+option -v pour creer une exception de recherche (ne contenant pas ) 
 
 commande ln
 la commande ln crée des lien symbolique entre les fichier ou les répertoire
