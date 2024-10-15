@@ -301,6 +301,3 @@ création d'une archive en .gzip (fichier .tar.gz équivalent a tgz)
 tar -cvzf nom_archive.tgz /repertoire/a/compresser
 tar -cvzf nom_archive.tgz fichier_a_compresser
 
-
-test de rajout d'une ligne
-
