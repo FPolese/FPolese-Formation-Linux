@@ -289,4 +289,17 @@ killall -KILL <nom du processus>
 killall tue tout les processus qui porte le meme nom
 kill tue un processus spécifique 
 
+commande tar
+creer des archives de compression (.gz ou tar)
+
+creation d'une archive en .tar : 
+tar -cvf nom-archiive.tar /repertoire/a/compresser
+ou 
+tar -cvf mon_archive.tar ficher_a_compresser
+
+création d'une archive en .gzip (fichier .tar.gz équivalent a tgz) 
+tar -cvzf nom_archive.tgz /repertoire/a/compresser
+tar -cvzf nom_archive.tgz fichier_a_compresser
+
+
 

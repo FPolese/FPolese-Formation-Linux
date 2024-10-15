@@ -1,0 +1,29 @@
+Gerer les services sous Linux
+
+arret d'un service
+sudo systemctl stop service
+
+demarrer un service
+sudo systemctl start service
+
+redemarrer un service
+sudo systemctl restart service
+
+recharger un service apres une modification de sa configuration
+sudo systemctl reload service
+
+desactiver un service
+sudo systemctl disable service
+
+afficher le status d'un service
+systemctl status service
+
+afficher les service installé et actifs
+systemctl list-units --type service
+
+afficher tous les services installé
+systemctl list-unit-files --type service
+
+activer un service au démarrage de la machine
+
+
