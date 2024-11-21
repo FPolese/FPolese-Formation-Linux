@@ -1,0 +1,14 @@
+inxi 
+pour avoir des infos sur le materiel
+
+inxi --help pour toutes les possibiité
+exemples 
+inxi -m (memoire)
+inxi -c (cpu)
+etc...
+
+fastfetch
+pour avoir des infos sur le materiel
+
+fastfetch --help pour les option
+
