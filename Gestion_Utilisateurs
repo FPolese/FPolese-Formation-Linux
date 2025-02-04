@@ -1,7 +1,7 @@
 pour pouvoir gere les utilisateur il faut etre connecté en root
 
 création d'un user
-useraad -c "Fabien Polese" fpolese
+useradd -c "Fabien Polese" fpolese
 passwd fpolese   (changement du mot de passe pour fpolese)
 
 l'option -c (ou --comment) : déscription courte du compte (ici nom complet du user)
@@ -62,7 +62,7 @@ l'option -F inque a awk que le fichier /etc/passwd utilise les deux-points comme
 
 les UID des users figure colone 3 donc on peut les extraire comme ca
 
-$ awk -F: '{print $3]' /etc/passwd
+$ awk -F: '{print $3}' /etc/passwd
 0
 1
 2
