@@ -305,4 +305,22 @@ commande inxi
 
 comme d'hab inxi -h (--help) pour connaitre l ensemble des option
 
+Personnaliser le prompt / terminal
+inserer la commande 
+PS1='\[\e[31m\]\u@\h:\w\$\] '
+\e[31m\] : defini la couleur des caractere qui suivent
+\u : affiche le nom utilisateur
+suivi de @
+\h : host court
+\H : host complet
+\w : repertoire actuel avec le chemin
+\W : repertoire actuel sans le chemin
+\$ : indique $ pour utlisateur et # pour root
+
+dans l exemple le prompt affiche :
+oxyacantha@fedora:~/Documents/FPolese-Formation-Linux$ 
+tout en rouge
+
+plus d'explication ici
+https://www.linuxtricks.fr/wiki/personnaliser-le-shell-bash-alias-historique-prompt
 
