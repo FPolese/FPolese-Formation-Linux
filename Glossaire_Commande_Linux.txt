@@ -1,4 +1,6 @@
 définir un nouveau nom de machine : hostnamectl set-hostname <nom_de_la_machine>
+cette commande modifie le fichier /etc/hostname
+
 visualier le contenu d'un fichier par page : Less
 htop
 btop
@@ -29,7 +31,6 @@ lister les processus : ps
 ps -f -u <nom du user>
 ps -efH : liste tous les processus pour tous les users
 
-
-
+filtrer le contenu d'un fichier par mot clé : grep
 
 
