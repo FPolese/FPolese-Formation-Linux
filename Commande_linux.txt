@@ -324,3 +324,11 @@ tout en rouge
 plus d'explication ici
 https://www.linuxtricks.fr/wiki/personnaliser-le-shell-bash-alias-historique-prompt
 
+commande ps : lister les processus
+
+lister tous les processus d'un user : ps -f -u <nom du user>
+
+lister les processus de tous les user : ps -ef
+l'option -H modifie l'affichage pour plus de lisibilité avec une mise en forme de type arbo
+rescence
+

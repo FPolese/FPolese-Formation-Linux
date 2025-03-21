@@ -1,0 +1,35 @@
+définir un nouveau nom de machine : hostnamectl set-hostname <nom_de_la_machine>
+visualier le contenu d'un fichier par page : Less
+htop
+btop
+
+gestion de service :
+Statut d'un service : systemctl status <nom_du_service>
+
+demarrer un service : systemctl start <nom_du_service>
+
+arret d'un service : systemctl stop <nom_du_service>
+
+surveiller un service : watch systemctl is-enable <nom_du_service>
+
+
+système de fichiers
+df -h
+
+reinstaller un paquet : apt reinstall <nom du paquet> ou dnf reinstall <nom du paquet>
+
+connexion ssh : ssh <adresse du serveur>
+
+creer utilisateur + dossier /home : useradd -m <nom de user>
+
+recherche de paquet : apt search <nom du paquet> / dnf search <nom du paquet>
+
+
+lister les processus : ps
+ps -f -u <nom du user>
+ps -efH : liste tous les processus pour tous les users
+
+
+
+
+
