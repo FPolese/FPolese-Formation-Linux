@@ -1,5 +1,5 @@
 pour éviter les problèmes d'interprétation entre les différents shell il faut commencer son script par la ligne SheBang (HashBang) #!/bin/bash
-l'interpreteur comprendra qu'il doit utilier le shel bash pour interpreter la suite du script
+l'interpreteur comprendra qu'il doit utilier le shell bash pour interpreter la suite du script
 
 # début du script
 #!/bin/bash

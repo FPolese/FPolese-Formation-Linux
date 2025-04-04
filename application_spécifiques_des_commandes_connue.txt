@@ -1,6 +1,6 @@
 application spécifique pour des commande connue
 
-crééer un fichier dont le nom comporte le nom de l'utilisateur et la date de création :
+créer un fichier dont le nom comporte le nom de l'utilisateur et la date de création :
 
 touch $(whoami)-$(date)-nom_du_fichier
 
