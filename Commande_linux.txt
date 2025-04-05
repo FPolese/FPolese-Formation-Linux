@@ -252,6 +252,9 @@ on peut trier par exemple avec grep
 lspci | grep -i vga pour n'afficher que la carte vidéo
 option -v pour creer une exception de recherche (ne contenant pas ) 
 
+grep -i <exemple> ./*.*  recherche <exemple> sans se soucier de la casse
+
+
 commande ln
 la commande ln crée des lien symbolique entre les fichier ou les répertoire
 
@@ -331,4 +334,8 @@ lister tous les processus d'un user : ps -f -u <nom du user>
 lister les processus de tous les user : ps -ef
 l'option -H modifie l'affichage pour plus de lisibilité avec une mise en forme de type arbo
 rescence
+
+
+echo $PATH affiche l'ordre des chemin dans lequel le shell cherche les commandes a lancher
+
 
