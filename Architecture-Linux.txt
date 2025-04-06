@@ -1,0 +1,13 @@
+explications des répertoires à la racine
+
+/bin  : contient l'ensemble des commandes simples nécessaire au démarrage système
+
+/boot : contient l'ensemble des commande nécessaire au boot système
+
+/dev (devices) : contient les fichiers de définition des périphériques (les périphériques sont déclaré sous forme de fichier)
+
+/etc : contient les fichiers de configuration sous formes TXT (etc : Editable Text Configuration)
+
+/lib et /lib64  : sont les répertoire de bibliothèque partagées
+
+ 
