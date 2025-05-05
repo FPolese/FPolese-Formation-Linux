@@ -338,4 +338,8 @@ rescence
 
 echo $PATH affiche l'ordre des chemin dans lequel le shell cherche les commandes a lancher
 
+commande gpg : encrypter et signer un fichier ou dossier
+
+
+
 
