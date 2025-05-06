@@ -1,0 +1,9 @@
+RAZ un DD via la console windows
+(supprime TOUTES les partition)
+jeux d'instruction a saisir (se renseigner sur les commande qui suivent pour ne pas faire de connerie
+diskpart
+List disk
+select disk <nmr du disk désiré>
+clean
+
+
