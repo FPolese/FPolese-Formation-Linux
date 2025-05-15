@@ -1,0 +1,9 @@
+2024-10-31 :
+Ajout de l'option upgrade pour mettre à niveau vers la version suivante de Fedora si elle existe et est stable.
+
+2024-09-29 :
+Correction du reboot si nécessaire qui ne fonctionnait plus
+
+2024-09-25 :
+Compatibilité ajoutée avec dnf5 pour Fedora41.
+Ajout de l'option scriptupdate pour mettre à jour le script depuis lui même.

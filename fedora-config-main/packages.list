@@ -1,0 +1,157 @@
+#add:packagename
+#del:packagename
+
+# Français sur système installé en anglais
+add:aspell-fr
+add:libreoffice-langpack-fr
+
+# Intégration APPS KDE
+add:plasma-breeze
+
+# Specifque Hardware
+add:amd-ucode-firmware
+
+# Admin SYS
+add:cockpit
+add:cockpit-bridge
+add:cockpit-networkmanager
+add:cockpit-selinux
+add:cockpit-storaged
+add:cockpit-system
+add:cockpit-ws
+add:cockpit-podman
+add:cockpit-machines
+
+# Fonts
+add:redhat-text-vf-fonts
+add:redhat-text-fonts
+add:redhat-mono-vf-fonts
+add:redhat-mono-fonts
+add:redhat-display-vf-fonts
+add:redhat-display-fonts
+
+# GNOME Apps
+add:ptyxis
+add:seahorse
+add:gnome-tweaks
+add:file-roller
+add:dconf-editor
+del:abrt
+del:gnome-terminal
+
+# CLI : Console
+add:screen
+add:vim-enhanced
+
+# CLI : Contrib Fedora
+add:git
+add:koji
+add:python3-fedora
+add:libtirpc-devel
+
+# CLI : devops
+add:podman
+add:podman-tui
+add:toolbox
+add:toolbox-extra-tools
+
+# CLI : Scripting
+add:ShellCheck
+add:powershell
+
+# CLI : Système
+add:htop
+add:nmon
+add:glances
+del:neofetch
+del:screenfetch
+add:fastfetch
+add:inxi
+add:lm_sensors
+add:nvtop
+add:ncdu
+add:cronie
+add:mariadb
+add:nfs-utils
+
+# CLI : Disques
+add:nwipe
+add:sg3_utils
+
+# CLI : Réseau
+add:netcat
+add:nmap
+add:iftop
+add:traceroute
+add:speedtest-cli
+add:fuse-sshfs
+add:telnet
+
+# CLI : backup
+add:borgbackup
+
+# CLI : Multimedia
+add:abcde
+add:sox
+add:vorbisgain
+add:mediainfo
+add:yt-dlp
+add:cmus
+
+# CLI : Divers
+add:git
+add:pv
+add:android-tools
+add:arm-image-installer
+
+# GUI : Multimedia
+add:pavucontrol
+del:clementine
+add:strawberry
+add:smplayer
+add:soundconverter
+add:kdenlive
+add:audacity
+add:easytag
+del:peek
+del:obs-studio
+del:obs-studio-plugin-webkitgtk
+del:obs-studio-plugin-browser
+add:mediainfo-gui
+add:HandBrake-gui
+
+# GUI : Virtualisation
+add:VirtualBox
+add:virt-manager
+del:virt-viewer
+
+# GUI : Graphisme
+add:gimp
+add:inkscape
+del:flameshot
+
+# GUI : Reseau
+add:remmina
+del:anydesk
+add:gqrx
+
+# GUI : Internet
+add:epiphany
+add:evolution
+add:vivaldi-stable
+add:google-chrome-stable
+del:telegram-desktop
+add:discord
+
+# GUI : Utilitaires
+add:cool-retro-term
+add:guake
+
+# GUI : Sécurité
+add:keepassxc
+
+# GUI : Jeux
+add:dosbox-staging
+
+# GUI : Admin Systeme
+add:wireshark
