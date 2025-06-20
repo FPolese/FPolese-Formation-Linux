@@ -123,4 +123,15 @@ chown proprietaire:groupe fichier
 exemple
 chown oxyacantha:wheel test.txt
 
+activer l'acces root en ssh
+si la cession root est désactiver : l'activer par création de mot de pass root
+sudo passwd root
+
+éditer le fichier /etc/ssh/sshd_config
+modifier la ligne #PermitRootLogin prohibit-password en  
+PermitRootLogin yes 
+
+redemarrer le service sshd
+sudo systemctl restart sshd
+
 

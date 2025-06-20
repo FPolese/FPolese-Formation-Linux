@@ -12,3 +12,7 @@ pour avoir des infos sur le materiel
 
 fastfetch --help pour les option
 
+nmtui 
+network manager interface pour Rhel
+
+

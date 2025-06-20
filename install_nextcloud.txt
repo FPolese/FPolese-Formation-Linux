@@ -1,0 +1,13 @@
+timeline installation de nextcloud depuis 
+https://www.youtube.com/watch?v=ASQ0MDGS9CQ&t=3207s
+video adrienlinuxtricks
+
+début installation après machine a jour
+33:50
+
+installation nextcloud (latest.zip)
+55:07
+
+configuration mariadb
+1:14:40
+

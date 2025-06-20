@@ -1,0 +1,20 @@
+comment rejoindre un domaine AD (ici oxylab.lan)
+
+en root
+installer les paquets nécessaires si pas déja fait
+
+dnf -y install realmd sssd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools samba-client
+
+#Scannez le réseau
+[root@FEDORA22 ~]# realm discover
+
+Rejoindre et tester le domaine
+
+#Faites la jonction avec votre domaine
+realm join oxylab.lan -U admin_polese
+Password for administrateur:                    #Renseignez le mot de passe administrateur de l'AD
+
+#Testez votre jonction au domaine en lançant une requête de demande d'information sur un compte de l'AD
+id mondomaine.fr\\utilisateur        #Remplacez le mot utilisateur par le login d'un compte de l'AD
+
+
