@@ -6,7 +6,7 @@ installer les paquets nécessaires si pas déja fait
 dnf -y install realmd sssd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools samba-client
 
 #Scannez le réseau
-[root@FEDORA22 ~]# realm discover
+realm discover oxylab.lan
 
 Rejoindre et tester le domaine
 
