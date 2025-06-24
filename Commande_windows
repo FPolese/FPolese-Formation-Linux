@@ -6,4 +6,7 @@ List disk
 select disk <nmr du disk désiré>
 clean
 
+lister les ip d'un reseau
+
+arp -a
 
